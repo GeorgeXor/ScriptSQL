@@ -1,0 +1,12 @@
+--Creacion de LOGIN--
+CREATE LOGIN Login_Pruebas WITH PASSWORD = '1234567'
+
+--USER-- Roles Base de Datos
+CREATE USER Usuario_Pruebas FOR LOGIN Login_Pruebas
+
+--GRANT y REVOKE --
+--LENGUAJE DCL
+GRANT SELECT
+ON  BaseDeDatos.Esquema.Tabla
+TO Usuario_Pruebas --> Usuario
+WITH GRANT OPTION 
